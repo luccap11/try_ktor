@@ -20,11 +20,12 @@ See deployment for notes on how to deploy the project on a live system.
 What things you need to install the software and how to install them
 
 **Backend**
-```
-* JDK8
-* sbt version 
-* NodeJS version >= 14
-```
+
+* JDK 11
+* Ktor 2.2.1
+* Gradle Kotlin 
+* Engine: Tomcat
+* Configuration in: Yaml file
 
 **Frontend**
 ```
