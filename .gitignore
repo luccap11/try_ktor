@@ -1,0 +1,22 @@
+logs
+target
+/.bsp
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+/null
+a
+aS
+.g8
+project/project
+project/target
+
+# ignoring gitlab token files
+.gitlab_token
+
+# local links
+syntree_client
+.tool-versions
