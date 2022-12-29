@@ -24,8 +24,9 @@ What things you need to install the software and how to install them
 * JDK 11
 * Ktor 2.2.1
 * Gradle Kotlin 
-* Engine: Tomcat
+* Engine: Tomcat (9.0.70)
 * Configuration in: Yaml file
+* Gson
 
 **Frontend**
 ```
