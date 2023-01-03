@@ -13,11 +13,16 @@ jwt:
     audience: "jwt-audience"
     realm: "ktor sample app"
 
-# Point JPA at our database configuration
-#jpa:
-#    default: defaultPersistenceUnit
 
-#storage:
-#    driverClassName: "org.h2.Driver"
-#    jdbcURL: "jdbc:h2:file:"
-#    dbFilePath: build/db
+# Job queue sized to HikariCP connection pool
+database.dispatcher:
+    executor: "thread-pool-executor"
+    throughput: 1
+    thread-pool-executor:
+        fixed-pool-size: 9
+
+storage:
+    # Set Hikari to fixed size
+    prototype:
+        hikaricp.minimumIdle: 9
+        hikaricp.maximumPoolSize: 9

@@ -8,6 +8,7 @@ fun main(args: Array<String>): Unit =
     io.ktor.server.tomcat.EngineMain.main(args)
 
 fun Application.module() {
+    //environment.config
     H2DatabaseFactory.init()
     configureSecurity()
     configureHTTP()
