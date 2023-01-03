@@ -5,9 +5,19 @@ ktor:
     development: true
     deployment:
         port: 8080
-        watch:
-            - classes
+        #watch:
+        #    - classes
+        #    - resources
 jwt:
     domain: "https://jwt-provider-domain/"
     audience: "jwt-audience"
     realm: "ktor sample app"
+
+# Point JPA at our database configuration
+#jpa:
+#    default: defaultPersistenceUnit
+
+#storage:
+#    driverClassName: "org.h2.Driver"
+#    jdbcURL: "jdbc:h2:file:"
+#    dbFilePath: build/db
