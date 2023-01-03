@@ -5,9 +5,9 @@ ktor:
     development: true
     deployment:
         port: 8080
-        #watch:
-        #    - classes
-        #    - resources
+        watch:
+            - classes
+            - resources
 jwt:
     domain: "https://jwt-provider-domain/"
     audience: "jwt-audience"
